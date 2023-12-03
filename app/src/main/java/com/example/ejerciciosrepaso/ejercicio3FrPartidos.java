@@ -12,16 +12,29 @@ import androidx.fragment.app.Fragment;
 public class ejercicio3FrPartidos extends Fragment {
 
     private static final int CONTADORMAX = 11;
+
     public interface PartidoObserver {
         void onPartidoTerminado(int resultado);
     }
+
     private PartidoObserver partidoObserver;
 
     public ejercicio3FrPartidos() {
         // Required empty public constructor
     }
 
+    private void notifyPartidoTerminado(int resultado) {
+        if (partidoObserver != null) {
+            partidoObserver.onPartidoTerminado(resultado);
+        }
+    }
+
+    public void setPartidoObserver(PartidoObserver observer) {
+        this.partidoObserver = observer;
+    }
+
     Button equipo1, equipo2;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -55,15 +68,5 @@ public class ejercicio3FrPartidos extends Fragment {
         });
 
         return layout;
-    }
-
-    private void notifyPartidoTerminado(int resultado) {
-        if (partidoObserver != null) {
-            partidoObserver.onPartidoTerminado(resultado);
-        }
-    }
-
-    public void setPartidoObserver(PartidoObserver observer) {
-        this.partidoObserver = observer;
     }
 }
