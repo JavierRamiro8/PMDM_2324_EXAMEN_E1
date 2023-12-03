@@ -51,25 +51,25 @@
             android:id="@+id/ej1rdSumar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sumar" />
+            android:text="SUM" />
 
         <RadioButton
             android:id="@+id/ej1rdRestar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Restar" />
+            android:text="RES" />
 
         <RadioButton
             android:id="@+id/ej1rdMultiplicar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Multiplicar" />
+            android:text="MUL" />
 
         <RadioButton
             android:id="@+id/ej1rdDividir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dividir" />
+            android:text="DIV" />
 
     </RadioGroup>
 
@@ -87,7 +87,7 @@
         android:id="@+id/ej1RecibirResultado"
         android:layout_width="137dp"
         android:layout_height="71dp"
-        android:text="HOLA"
+        android:text="HELLO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

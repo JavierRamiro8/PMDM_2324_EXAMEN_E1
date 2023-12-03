@@ -13,11 +13,45 @@
         android:theme="@style/Theme.EjerciciosRepaso"
         tools:targetApi="31">
         <activity
+            android:name=".ejercicio3PingPong"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ejercicio2Ingreso"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicio2Retirada"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicio2Banco"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ejercicio1ResultadoCalculadora"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ejercicio1Repaso"
+            android:configChanges="orientation|screenSize"
             android:exported="true"
             android:label="@string/title_activity_ejercicio1_repaso"
-            android:theme="@style/Theme.EjerciciosRepaso"
-            android:configChanges="orientation|screenSize">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EjerciciosRepaso">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
